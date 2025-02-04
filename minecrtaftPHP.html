@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft 伺服器人數查詢</title>
+    <style>
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #status {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .loading {
+            color: gray;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .info {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Minecraft 伺服器人數查詢</h1>
+    <div style="font-size: 18px;margin-top: 20px;">minecraftdns.ddns.net<br>pofiatm9sky.ddns.net</div>
+    <input type="text" id="ip" placeholder="請輸入伺服器IP" />
+    <button onclick="checkServer()">刷新</button>
+    <div id="status" class="loading">請輸入伺服器IP並點擊刷新查詢在線人數</div>
+    <div id="info" class="info"></div>
+</div>
+
+<script>
+    async function checkServer() {
+        const ip = document.getElementById('ip').value;
+        const statusElement = document.getElementById('status');
+        const infoElement = document.getElementById('info');
+
+        // 清空狀態和資訊
+        statusElement.classList.remove('error', 'loading');
+        infoElement.innerHTML = '';
+        
+        if (!ip) {
+            statusElement.textContent = '請先輸入伺服器IP位址！';
+            statusElement.classList.add('error');
+            return;
+        }
+
+        statusElement.classList.add('loading');
+        statusElement.textContent = '載入中...';
+
+        try {
+            // 使用API取得Minecraft伺服器狀態
+            const response = await fetch(`https://api.mcsrvstat.us/2/${ip}`);
+            const data = await response.json();
+
+            if (data.online) {
+                statusElement.classList.remove('loading');
+                statusElement.classList.add('success');
+                statusElement.textContent = `伺服器在線，目前人數：${data.players.online}`;
+                
+                // 顯示版本和MOTD
+                const version = data.version || '不知道ㄋ';
+                const motd = data.motd.clean || '沒有MOTDㄉ資訊';
+                
+                infoElement.innerHTML = `
+                    <p><strong>版本：</strong>${version}</p>
+                    <p><strong>MOTD：</strong>${motd}</p>
+                `;
+            } else {
+                statusElement.classList.add('error');
+                statusElement.textContent = '伺服器還沒開或者不給你連:P';
+            }
+        } catch (error) {
+            statusElement.classList.add('error');
+            statusElement.textContent = '無法獲得伺服器資訊，檢查一下IP位址是不是真ㄉ';
+        }
+    }
+</script>
+
+</body>
+</html>
