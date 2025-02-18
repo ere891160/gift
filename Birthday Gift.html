@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="zh-Hant" />
+    <meta name="google" content="notranslate" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: 微軟正黑體;
+            --bgColor: rgb(99, 96, 96);
+        --fontColor: #424242;
+        background: var(--bgColor);
+        }
+        @media screen and (max-width:800px) {
+            .phone {
+                display: none;
+            }
+
+            .hi {
+                margin-top: -40px;
+            }
+        }
+
+        @media screen and (min-width:800px) {
+            .hi {
+                margin-top: -50px;
+            }
+            #music_img{
+                padding: 10px;
+            }
+        }
+    </style>
+    <title>給蔡佳媛ㄉ禮物</title>
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center vh-100 hi">
+        <div class="row">
+            <div class="card" style="width: 25rem;">
+                <!-- 這裡是輪播 -->
+                <div id="carouselExampleDark" class="carousel carousel-dark slide"> 
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="16" aria-label="Slide 17"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="17" aria-label="Slide 18"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="18" aria-label="Slide 19"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="19" aria-label="Slide 20"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="20" aria-label="Slide 21"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="21" aria-label="Slide 22"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="22" aria-label="Slide 23"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="23" aria-label="Slide 24"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="24" aria-label="Slide 25"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="25" aria-label="Slide 26"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="26" aria-label="Slide 27"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="27" aria-label="Slide 28"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="28" aria-label="Slide 29"></button>
+                      </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="9999999">
+                          <img src="./img/09EDB6E8-E30D-471F-8C77-ABA9C2B500D5.jpg" class="d-block w-100" alt="..." style="opacity:0.5;">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>總是接受我ㄉ無理取鬧</h5>
+                            <p>嘿，蔡佳媛，你說不要再寫卡片給你，那我就做一個網頁給你。</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="9999999">
+                          <img src="./img/5AD190AF-13AA-4AD8-B8F6-F1D09946F31E.jpg" class="d-block w-100" alt="..." style="opacity:0.5;">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>陪我去吃馬辣還幫我出錢</h5>
+                            <p>總是為我著想，還幫我出錢，真ㄉ好開心好開心，作夢都在笑</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="9999999">
+                          <img src="./img/C603F329-2D28-4D72-9689-5DDF75F903D9.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>我生日ㄉ時候還買一個大蛋糕給我</h5>
+                            <p>明明我們剛沒有認識多久，你就買一個大蛋糕給我，而且還是我喜歡吃ㄉ巧克力，超喜歡ㄉ，雖然很大吃ㄉ很痛苦ㄏㄏ</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_3809.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>跟我分享你最痛苦ㄉ故事</h5>
+                              <p>跟我講ㄌ很多你和前任發生ㄉ故事，我聽了都覺得你很傻，怎麼會這麼傻，然後現在還相信他，不過這也是我喜歡你的理由之一，你很重感情</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_3817.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>總是會叫我去睡覺，然後你也會聽我的早點睡</h5>
+                              <p>雖然都是我叫你早點睡，可是我去睡覺你也會早點去睡覺，很棒</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_3858.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>會聽我的吃多吃少，也會和我說吃了什麼</h5>
+                              <p>明明可以選擇亂吃，也可以選擇隨便吃然後跟我說有吃規定ㄉ東西，但還是很認真的照我說的去買，喜歡</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_3928.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>我感冒了會關心我</h5>
+                              <p>雖然我快好ㄌ但你還是叫我去看醫生，謝謝佳媛那麼關心我，喜歡</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_3925.png" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>會講很白爛ㄉ話</h5>
+                              <p>聊天時不時都會跟我開很白爛ㄉ幹話，喜歡你無話不說ㄉ樣子</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4050.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>陪我出門走走</h5>
+                              <p>喜歡ㄉ不是吉伊卡哇，但還是陪我去吉伊卡哇人多到爆ㄉ市集走走，真ㄉ很謝謝你陪我出門</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4035.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>會和我分享你喜歡聽什麼</h5>
+                              <p>有些歌我沒有聽過，你會和我講那是什麼歌</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4057.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>自己去唱歌時還會唱歌給我聽</h5>
+                              <p>去KTV也沒有忘記要錄歌給我聽，蔡佳媛唱歌真ㄉ很好聽！</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4064.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>陪我去吃壽司郎</h5>
+                              <p>陪我去吃壽司郎，而且還吃納豆，嘔買尬那ㄍ納豆真ㄉ超難吃的你還吃ㄉ下去超強</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4066.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>包容我ㄉ小突槌</h5>
+                              <p>有時候我沒有看清楚你打ㄉ字我就問了以前問過的問題，雖然你會生氣但你還是會原諒我，喜歡</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4073.png" class="d-block w-100" alt="..." style="opacity:0.2;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>我很北爛你也不會嫌棄我</h5>
+                              <p>我講話很白爛，你也不會不和我聊天，還是其實你已經預謀很久要封鎖我ㄌ，相信你不會ㄉ，謝謝蔡佳媛</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4111.png" class="d-block w-100" alt="..." style="opacity:0.1;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>明明可以晚點起床但還是7點多就起來跟我說早安</h5>
+                              <p>10點才上班ㄉ人，每天都7點多起來跟我說早安然後再繼續睡，我有注意到！</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4131.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>跟我分享上班ㄉ趣事</h5>
+                              <p>有很多很奇怪ㄉ客人，你都會跟我分享奇怪ㄉ客人，我聽ㄉ很開心(?</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4073.png" class="d-block w-100" alt="..." style="opacity:0.2;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>會跟我說妳哪裡不開心</h5>
+                              <p>跟我討論哪裡不開心，我才知道可以怎麼解決，或者怎麼陪著你</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4111.png" class="d-block w-100" alt="..." style="opacity:0.1;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>我有時候很敷衍但你還是會和我聊天</h5>
+                              <p>有時候我敷衍你，但你還是不計前嫌ㄉ和我聊天</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4131.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>會把我說ㄉ話放在心上</h5>
+                              <p>假裝不在意，但其實還是會把我說ㄉ話聽進去</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4138.png" class="d-block w-100" alt="..." style="opacity:0.2;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>會和我分享喜歡ㄉ事物</h5>
+                              <p>和我說自己喜歡維尼，好多好多東西都是維尼ㄉ還有一些怪怪ㄉ公仔(?</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4144.png" class="d-block w-100" alt="..." style="opacity:0.1;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>我出事ㄌ還會幫我想辦法</h5>
+                              <p>耳機掉進水溝還幫我拿衣架可以勾出來，真ㄉ笑死哈哈哈哈</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4148.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>組ㄌ超難組ㄉ燈籠</h5>
+                              <p>燈籠超難組但你還是組完ㄌ，超棒超喜歡</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4149.png" class="d-block w-100" alt="..." style="opacity:0.2;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>見面ㄉ時候雖然很尷尬但還是會回應我</h5>
+                              <p>我都講一些很無聊ㄉ話題但蔡佳媛還是會回應我，所以我還是會繼續講ㄉ</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4164.png" class="d-block w-100" alt="..." style="opacity:0.1;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>在我面前很會做自己</h5>
+                              <p>一起出門時想買什麼就買，不會假裝，對於想要的東西就會買下來</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4166.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>和我一樣都會一起聽好聽ㄉ歌</h5>
+                              <p>能夠一起聽音樂很棒，有同樣喜歡ㄉ音樂也很棒，你會跟我分享你ㄉ音樂那就更棒ㄌ</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4183.jpg" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>雖然對於前任還是很包容，但參考我ㄉ意見還是有改變想法</h5>
+                              <p>喜歡你有聽取我ㄉ意見不要對於前任那麼寬容ㄌ，每次聽到你和前任ㄉ故事還是會覺得你對他真ㄉ好好ㄡ，然後就會有點替你感到不開心(?</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4193.png" class="d-block w-100" alt="..." style="opacity:0.2;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>生病ㄉ時候有乖乖吃藥</h5>
+                              <p>生病ㄌ有好好ㄉ喝水、休息還有照時間吃藥，很棒，喜歡</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4201.jpg" class="d-block w-100" alt="..." style="opacity:0.1;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>幾乎沒有什麼不能聊的</h5>
+                              <p>很多話題你都可以聊，雖然有時候會敷衍我，但還是會跟著我的話題聊下去</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="9999999">
+                            <img src="./img/IMG_4207.png" class="d-block w-100" alt="..." style="opacity:0.3;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>28ㄍ喜歡了！</h5>
+                              <p>嘿蔡佳媛，我打完了28個喜歡了！這個網站給你ㄉ用意不是要你喜歡我，而是一個承諾，我會一直遵守我ㄉ承諾，儘管你不喜歡我但我還是會一直陪你聊到山窮水盡，那天就是很久很久很久以後，然後也要謝謝你看到這邊，祝你生日快樂！</p>
+                            </div>
+                          </div>
+                      </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <!-- 這裡是文字 -->
+                <div class="card-body">
+                  <p class="card-text">告訴你，喜歡你的28個理由</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
